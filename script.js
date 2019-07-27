@@ -48,3 +48,15 @@ $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 });
 
+/*Navbar Expand Color*/
+
+$('#navbarResponsive').on('show.bs.collapse', function () {
+  $('.navbar').addClass('mobile-opened');
+  $('.navbar').removeClass('navbar-dark');
+  $('.navbar').addClass('navbar-light');
+});
+
+$('#navbarResponsive').on('hide.bs.collapse', function () {
+  $('.navbar').removeClass('mobile-opened');
+  $('.navbar').addClass('navbar-dark');
+});

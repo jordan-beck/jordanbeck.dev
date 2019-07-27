@@ -8,13 +8,12 @@
 
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,300,600'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700'>
-  <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica&display=swap" rel="stylesheet">
-  <link
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
   <link rel="stylesheet" href="./style.css">
   
 </head>
@@ -28,10 +27,13 @@
  <!--Navigation-->
 
   <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid" role="navigation">
       <a class="navbar-brand txt anim-text-flow" href="index.html">JB</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -51,7 +53,8 @@
       </div>
     </div>
   </nav>
-  <section class="mast container-fluid" id="home">
+
+  <section class="mast" id="home">
     <figure class="mast__bg" style="background-image:url(images/me1920.jpg) "></figure>
     <header class="mast__header  js-clippy">
         <h5 class="mast__pretitle">hi.</h5>
@@ -61,7 +64,7 @@
     </header>
   </section>
 
-  <section class="mast container-fluid" id="about">
+  <section class="mast" id="about">
     <figure class="mast__bg" style="background-image:url(https://unsplash.it/1800/800?image=1008)"></figure>
     <header class="mast__header  js-clippy" id="aboutTopMargin">
       <h5 class="mast__pretitle">my philosophy</h5>
@@ -72,7 +75,7 @@
       <hr class="sep">
       <h5 class="mast__pretitle">my services</h5>
       <div class="row">
-        <div class="col-md-12 col-lg-6 services">
+        <div class="col-xs-12 col-sm-6 col-md-6 services">
           <ul class="serviceslist">
             <li>web development</li>
             <li>web design</li>
@@ -83,12 +86,12 @@
             <li></li>
           </ul>
         </div>
-        <div class="col-md-12 col-lg-6 services">
+        <div class="col-xs-12 col-sm-6 col-md-6 services">
           <ul class="serviceslist">
             <li>e-commerce</li>
             <li>photography</li>
             <li>ui / ux design</li>
-            <li>devops</li>
+            <li>aerial photography</li>
             <li>digital marketing</li>
             <li>i might even fix your printer</li>
             <li></li>
@@ -98,22 +101,80 @@
     </header>
   </section>
     
-  <section class="mast container-fluid" id="projects">
+  <section class="mast" id="projects">
     <figure class="mast__bg" style="background-image:url(https://unsplash.it/1800/800?image=945)"></figure>
-  <header class="mast__header  js-clippy">
+  <header class="mast__header  js-clippy" id="projectsTopMargin">
     <h5 class="mast__pretitle">projects</h5>
     <h2 class="mast__title">here are some things i've done.</h2>
     <hr class="sep">
-    <h5 class="mast__pretitle">coming soon</h5>
-  </header>
+    <div class="row projects">
+            <div class="cardcontainer remove-all-margin-padding col-xs-12 col-sm-6 col-md-3 img-" style="background-image:url(./images/BHCmockup4.png)">
+              <div class="overlay">
+                <div class = "items"></div>
+                  <div class = "items head">
+                    <p>Bringing Hope Counseling</p>
+                    <hr>
+                  </div>
+                  <div class = "items price">
+                    <p class="new">Web Design &<br />
+                      Development,<br />
+                      Logo Design<br />
+                      </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="#" class="emaillink"><i class="fa fa-link"></i>
+                    <span >SEE PROJECT</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cardcontainer remove-all-margin-padding col-xs-12 col-sm-6 col-md-3">
+              <div class="overlay">
+                <div class = "items"></div>
+                  <div class = "items head">
+                    <p>Bringing Hope Counseling</p>
+                    <hr>
+                  </div>
+                  <div class = "items price">
+                    <p class="new">Web Design &<br />
+                      Development<br />
+                      Logo Design<br />
+                      </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="#" class="emaillink"><i class="fa fa-link"></i>
+                    <span >SEE PROJECT</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="cardcontainer remove-all-margin-padding col-xs-12 col-sm-6 col-md-3">
+              <div class="overlay">
+                <div class = "items"></div>
+                  <div class = "items head">
+                    <p>Bringing Hope Counseling</p>
+                    <hr>
+                  </div>
+                  <div class = "items price">
+                    <p class="new">Web Design &<br />
+                      Development<br />
+                      Logo Design<br />
+                      </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="#" class="emaillink"><i class="fa fa-link"></i>
+                    <span >SEE PROJECT</span></a>
+                </div>
+              </div>
+            </div>
+      </div>
+  </header> 
   </section>
 
   <section class="mast container-fluid" id="contact">
     <figure class="mast__bg" style="background-image:url(https://unsplash.it/1800/800?image=945)"></figure>
-  <header class="mast__header  js-clippy">
+  <header class="mast__header  js-clippy contact">
   <h5 class="mast__pretitle">contact</h5>
   <h2 class="mast__title">want to hire me or just have a question?<br />
-   <a href="mailto:me@jordanbeck.dev" class="emaillink"> click here to send me a mail.</a></h2>
+   <a href="mailto:me@jordanbeck.dev" class="emaillink"> click here</a> to send me a mail.</h2>
   <hr class="sep">
   </header>
   </section>
