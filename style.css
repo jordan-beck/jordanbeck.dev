@@ -230,9 +230,6 @@ main > section:nth-child(5):not(.site-menu), main > article:nth-child(5):not(.si
   margin-top: 4px;
 }
 
-
-
-
 #bio  {
   font-size: 200%;
   width: 50%;
@@ -460,7 +457,7 @@ main > section:nth-child(5):not(.site-menu), main > article:nth-child(5):not(.si
     font-size: 1em;
   }
   #projectsTopMargin  {
-    top: 10%;
+    top: 8%;
   }
   #aboutTopMargin {
     top: 10%;
@@ -476,6 +473,10 @@ main > section:nth-child(5):not(.site-menu), main > article:nth-child(5):not(.si
   }
   .head hr  {
     margin: 0;
+  }
+  .remove-all-margin-padding{
+    margin: 4px 1em 0 1em;
+    padding:0;
   }
 }
 
