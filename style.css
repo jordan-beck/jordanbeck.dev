@@ -480,7 +480,7 @@ main > section:nth-child(5):not(.site-menu), main > article:nth-child(5):not(.si
   }
 }
 
-@media (min-width: 768px) {
+
   .multi-item-carousel .carousel-inner .carousel-item {
     margin-right: inherit;
   }
@@ -535,7 +535,6 @@ main > section:nth-child(5):not(.site-menu), main > article:nth-child(5):not(.si
     display: block;
     visibility: visible;
   }
-}
 
 
 /* Color Animation for 'JB' Logo*/
